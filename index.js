@@ -1,4 +1,3 @@
-import cors from "cors";
 import "dotenv/config";
 import express from "express";
 // import { connectDB } from "./config/db.js";
@@ -13,13 +12,13 @@ const port = 4000;
 
 // middleware
 app.use(express.json());
-app.use(
-  cors({
-    origin: ["https://tasty-dash.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: ["https://tasty-dash.vercel.app"],
+//     methods: ["POST", "GET"],
+//     credentials: true,
+//   })
+// );
 
 // database connection
 // connectDB();
