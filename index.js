@@ -23,9 +23,9 @@ app.use(
 // api endpoint
 // app.use("/api/food", foodRouter);
 // app.use("/images", express.static("uploads")); // we can access the image at images/image_name now
-// app.use("/api/user", userRouter);
-// app.use("/api/cart", cartRouter);
-// app.use("/api/order", orderRouter);
+app.use("/api/user", "Test");
+app.use("/api/cart", "tst");
+app.use("/api/order", "tst");
 
 app.get("/", (req, res) => {
   res.send("api working");
